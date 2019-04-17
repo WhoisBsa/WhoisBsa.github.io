@@ -9,9 +9,12 @@ body,
 .navbar-brand{
     color: gold !important;
 }
+
 #cover{
-    background:url("https://cdn.pixabay.com/photo/2014/05/03/00/46/gadgets-336635_960_720.jpg") no-repeat center center fixed;
+    background:url("../img/Flowing_Ribbon.jpg") no-repeat center center fixed; 
     background-size: cover;
+    width: 100%;
+    position: static;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,12 +40,12 @@ h2{
     margin-bottom: 30px;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 75px;
-    color: #fff;
-    margin-bottom: 30px;
+.pclass{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #ffff;
+    margin-bottom: 24px;
 }
 .btn-primary{
     font-family: 'Montserrat', sans-serif;
@@ -171,16 +174,7 @@ a.nav-link:hover{
     position: relative;
     text-align: center;
 }
-.aboutUs-content:before{
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-    width: 4px;
-    background: #f1f1f1;
-    margin-left: -2px;
-}
+
 .about-circle:before{
     top: 0;
     bottom: 0;
@@ -392,12 +386,6 @@ textarea{
     }
     h2{
         font-size: 30px;
-    }
-    .aboutUs-content img{
-        display:none;
-    }
-    .about-circle{
-        display:none;
     }
     #aboutUs{
         padding: 40px;
