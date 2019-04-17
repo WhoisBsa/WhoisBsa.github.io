@@ -13,7 +13,6 @@ body,
 #cover{
     background:url("../img/Flowing_Ribbon.jpg") no-repeat center center fixed; 
     background-size: cover;
-    width: 100%;
     position: static;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -163,12 +162,14 @@ a.nav-link:hover{
 }
 .aboutUs-content .row{
     margin-bottom: 90px;
+    text-align: center;
 }
 .aboutUs-content h4{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #222;
+    text-align: center;
 }
 .aboutUs-content{
     position: relative;
@@ -255,7 +256,7 @@ a.nav-link:hover{
     margin: 0 auto;
 }
 #contact{
-    background: url("https://www.uniguard.com.au/wp-content/uploads/2017/05/world-map-dark.jpg") no-repeat center center fixed;
+    background: url("../img/world-map-dark.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
