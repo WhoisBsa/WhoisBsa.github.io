@@ -326,6 +326,7 @@ a.socicon{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #fff !important;
+    text-decoration: none;
     transition: color .5s ease;
     -webkit-transition:  color .5s ease;
     -moz-transition:  color .5s ease;
