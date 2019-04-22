@@ -1,0 +1,317 @@
+# Site settings
+baseurl = "https://whoisbsa.github.io"
+languageCode = "pt-br"
+title = "Matheus Barbosa"
+theme = "hugo-ag-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Matheus Barbosa Souza"
+  description = "Estudante de Ciência da Computação"
+  email = "mbscbsjbs@gmail.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "Matheus Barbosa"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "ESCOLARIDADE"
+    about = "SOBRE"
+    contact = "CONTATO"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "SEJA BEM VINDO!"
+    subtitle = "Vamos Trabalhar Juntos!"
+    buttonText = "CONTE-ME MAIS"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Escolaridade"
+    subtitle = "Meus cursos em geral."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-university"
+      title = "UNIPAC"
+      description = """Bacharel em Ciência da Computação  
+      2017 - 2021"""
+      url = "https://barbacena.site.unipac.br/"
+
+    [[params.services.row.list]]
+      icon = "fa-code"
+      title = "UDEMY"
+      description = """Desenvolvimento Web Completo  
+      2019 - Cursando"""
+      url = "https://udemy.com"
+
+    [[params.services.row.list]]
+      icon = "fa-desktop"
+      title = "Curso em Vídeo"
+      description = """Programação Completa com Python  
+      2018 - 2019"""
+      url = "https://udemy.com"
+
+    [[params.services.row.list]]
+      icon = "fa-database"
+      title = "UDEMY"
+      description = """Banco de Dados MySQL  
+      2018 - 2019"""
+      url = "https://udemy.com"
+
+    [[params.services.row.list]]
+      icon = "fa-git"
+      title = "UDEMY"
+      description = """Git e Github Completo  
+      2018 - 2019"""
+      url = "https://udemy.com"
+
+    [[params.services.row.list]]
+      icon = "fa-book"
+      title = "BOOK"
+      description = """Automatize Tarefas Maçantes com Python  
+      2019 - Cursando"""
+      url = "https://automatetheboringstuff.com/"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+   title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+  #  [params.portfolio.modal]
+  #    client = "Client"
+  #    date = "Date"
+  #    category = "Category"
+  #    buttonText = "Close project"
+
+
+  # About section
+  [params.about]
+    enable = true
+    title = "SOBRE MIM"
+    subtitle = "Um pouco sobre quem eu sou."
+    endpoint = "Be part<br>of my<br>story!!"
+    # The events will be listed from thse top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      # date = ""
+      title = "Quem eu sou"
+      description = "Entusiasta em Python, DevWeb e Linux. Sou uma pessoa dinâmica e pró-ativa, disposta sempre a aprender, com facilidade para o aprendizado e trabalho em equipe. Busco sempre novas responsabilidades e experiências e procuro oportunidades em empresas onde posso estar sempre ampliando os meus conhecimentos."
+
+    [[params.about.events]]
+      img = "2.jpg"
+      #date = "March 2011"
+      title = "Hobbies"
+      description = "Eu amo vídeo-game e matemática, mas o que mais eleva a minha dopamina é sentar na cadeira e perder a noção do tempo enquanto escrevo código."
+
+    [[params.about.events]]
+      img = "3.jpg"
+      #date = "December 2012"
+      title = "Sem fins lucrativos"
+      description = """Eu contribuo para o site Open Source [osprogramadores.com](https://osprogramadores.com/) no repositório do GitHub, verificando ortografia e resolvendo os desafios propostos, ocupando atualmente a [5º posição](https://osprogramadores.com/scores/) no hi-score do site.  
+              Membro ativo do site [StackOverflow](https://pt.stackoverflow.com/users/122392/whoismatt), atualmente com 300+ pontos de reputação."""
+
+    #[[params.about.events]]
+    #  img = "4.jpg"
+    #  #date = "July 2014"
+    #  title = "Phase Two Expansion"
+    #  description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+  # Team section
+  [params.team]
+    enable = false
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "1.jpg"
+      name = "Kay Garland"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
+      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "2.jpg"
+      name = "Larry Parker"
+      position = "Lead Marketer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Diana Pertersen"
+      position = "Lead Developer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "CONTATE-ME"
+    subtitle  = "CASO QUEIRA TROCAR UMA IDEIA."
+    buttonText = "ENVIAR"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "mbscbsjbs@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    thanks = "Obrigado pelo seu contato!."
+    error = "Mensagem não pode ser enviada. Por favor contate-me em matheusb635@gmail.com."
+
+    [params.contact.captcha]
+      sitekey = "6LfbJZ8UAAAAAFKfDFwoHUz9L4xva10KMHBeGOUI"
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Seu Nome *"
+      warning = "Por favor informe seu nome."
+
+    [params.contact.form.email]
+      text = "Seu Email *"
+      warning = "Por favor informe seu email."
+
+    [params.contact.form.subject]
+      text = "Assunto *"
+      warning = "Por favor informe seu assunto."
+
+    [params.contact.form.message]
+      text = "Sua Mensagem *"
+      warning = "Por favor entre com uma messagem."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-github"
+      link = "https://github.com/WhoisBsa"
+      title = "Github"
+
+    [[params.footer.social]]
+      icon = "fa-stack-overflow"
+      link = "https://pt.stackoverflow.com/users/122392/whoismatt"
+      title = "StackOverflow"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "https://www.linkedin.com/in/whoisbsa/"
+      title = "LinkedIn"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/whoisbsa"
+      title = "Twitter"
