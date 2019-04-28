@@ -1,7 +1,7 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 300) {
+    if (scroll >= 200) {
         $(".fixed-top").addClass("change-fixed-top");
     } else {
         $(".fixed-top").removeClass("change-fixed-top");

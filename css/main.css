@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=VT323');
 html,
-body,
+body{background: #262626;};
 #cover{
     height: 100%;
 }
 .navbar-brand{
     color: gold !important;
+    font-family: 'VT323', monospace,"Helvetica Neue",Helvetica,Arial;
+    font-size: 2em;
 }
 
 #cover{
-    background:url("../img/cup-of-coffee-1280537_1920.jpg") no-repeat ; 
-    background-size: cover;
     position: static;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -59,7 +60,7 @@ h2{
     color: #fed136;
 }
 a.nav-link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 14px;
     color: #fff !important;
     transition: color .5s ease;
@@ -73,6 +74,10 @@ a.nav-link:hover{
 }
 a.socicon:hover{
     color: #fed136 !important;
+    transition: color .5s ease;
+    -webkit-transition:  color .5s ease;
+    -moz-transition:  color .5s ease;
+    -o-transition:  color .5s ease;
 }
 
 /* Services */
@@ -88,6 +93,7 @@ a.socicon:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 700;
+    color: #fed136;
 }
 .services-top p,
 .portfolio-top p, 
@@ -97,8 +103,25 @@ a.socicon:hover{
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 16px;
-    color: #777;
+    color: silver;
     margin-bottom: 70px;
+}
+
+.aboutUs-a {
+    color: #fed136;
+    text-decoration: none;
+    transition: color .5s ease;
+    -webkit-transition:  color .5s ease;
+    -moz-transition:  color .5s ease;
+    -o-transition:  color .5s ease;
+}
+
+a.aboutUs-a:hover{
+    text-decoration: none;
+    transition: color .5s ease;
+    -webkit-transition:  color .5s ease;
+    -moz-transition:  color .5s ease;
+    -o-transition:  color .5s ease;
 }
 .item-circle{
     border: 3px solid #fed136;
@@ -125,12 +148,12 @@ a.socicon:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #222;
+    color: #fed136;
     margin-top: 24px;
 }
 .services-content p,.aboutUs-content p{
     font-family: 'Roboto Slab', serif;
-    color: #777;
+    color: silver;
     font-size: 14px;
 }
 #portfolio{
@@ -171,7 +194,7 @@ a.socicon:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #222;
+    color: #fed136;
     text-align: center;
 }
 .aboutUs-content{
@@ -314,7 +337,7 @@ textarea{
     color: #fff;
 }
 .company-social-icon i{
-    background: #262626;
+    background: #222;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -366,9 +389,6 @@ a.socicon{
 
 /* Bootstrap media 2 */
 @media (max-width: 767px){
-    .navbar-collapse{
-        background: rgba(0,0,0,.35)
-    }
     .navbar-light .navbar-toggler{
         border: 1px solid #fed136
     }
